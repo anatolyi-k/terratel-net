@@ -790,6 +790,12 @@ template {
 	margin-right: auto;
 }
 
+.site-footer {
+	padding-top: 0 !important;
+	padding-bottom: 0 !important;
+	margin-top: 0 !important;
+}
+
 .site-header {
 	padding-top: calc(0.75 * var(--global--spacing-vertical));
 	padding-bottom: calc(2 * var(--global--spacing-vertical));
@@ -3712,6 +3718,7 @@ table.wp-calendar-table caption {
 
 .wp-custom-logo .site-header {
 	align-items: center;
+	padding: 20px 0;
 }
 @media only screen and (min-width: 482px) {
 
@@ -4084,7 +4091,8 @@ h1.entry-title {
 }
 
 body:not(.single) .site-main > article:last-of-type .entry-footer {
-	border-bottom: var(--separator--height) solid transparent;
+	border-bottom: 0;
+	padding-bottom: 0;
 }
 
 .single .site-main > article > .entry-footer {
@@ -5998,6 +6006,48 @@ footer {
 }
 
 /* Custom style */
-img.products-block-image {
+.header-block-title {
+    font-size: 26px;
+    color: #000080;
+    text-align: center;
+    font-weight: 500;
+    line-height: 38px;
+}
+.product-block-item {
+    display: block;
+    float: left;
+}
+img.product-block-image {
     max-width: 100%;
+	padding-right: 50px;
+}
+.product-block-feature {
+    color: #275c7c;
+    font-size: 25px;
+    font-weight: 600;
+}
+.product-block-name {
+    font-size: 28px;
+    color: #444444;
+    font-weight: 600;
+	margin-bottom: 15px;
+}
+.product-block-desc {
+    font-size: 16px;
+}
+.text-block {
+    margin-top: 50px;
+}
+.header-desc-title {
+    color: #444444;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+
+.hidden{
+	opacity:0;
+}
+.visible{
+	opacity:1;
 }

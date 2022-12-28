@@ -16,8 +16,6 @@
 		</div><!-- #primary -->
 	</div><!-- #content -->
 
-	<?php get_template_part( 'template-parts/footer/footer-widgets' ); ?>
-
 	<footer id="colophon" class="site-footer">
 
 		<?php if ( has_nav_menu( 'footer' ) ) : ?>
@@ -76,23 +74,9 @@
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
-
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
-function onEntry(entry) {
-	entry.forEach(change => {
-	  if (change.isIntersecting) {
-	   change.target.classList.add('show');
-	  }
-	});
-  }
-  
-  let options = {
-	threshold: [0.5] };
-  let observer = new IntersectionObserver(onEntry, options);
-  let elements = document.querySelectorAll('.animation');
-  for (let elm of elements) {
-	observer.observe(elm);
-  }
+  AOS.init();
 </script>
 
 </body>
